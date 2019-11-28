@@ -1,0 +1,31 @@
+body {
+    background-color: #eee;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+input[type='radio'] {
+    opacity: 0;
+}
+
+input[type='radio'] + img {
+    width: 6rem;
+    height: 6rem;
+    cursor: pointer;
+}
+
+input[type='radio'] + img.photo-reverse {
+    transform: rotateY(180deg);
+}
+
+input[type='radio'].radio:checked + img {
+    border: 5px solid #04a1eb;
+    border-radius: 50%;
+}
+
+input[type='radio'].radioMay:checked + img {
+    border: 5px solid #eb042b;
+    border-radius: 50%;
+}
